@@ -21,7 +21,13 @@ If yes: write it up as something that stands on its own — a published post is 
 
 Whether or not today produces an article, you always own one thing that can change freely: a "what's on the radar" section at the top of blog/index.html — things moving in the field that haven't reached the bar for a full article yet, and open questions worth keeping an eye on. Update this whenever something shifts, even if it never becomes an article on its own. This exists so you have somewhere real to put things that are moving but not yet worth a permanent piece — use it instead of lowering your bar for what counts as an article.
 
-blog/index.html should read well: clear, uncluttered, something a person would actually want to open. The "what's on the radar" section at the top is freely mutable. Published articles are immutable once posted, correctable only by an explicit erratum, and listed most recent first.
+The "what's on the radar" section at the top of blog/index.html is freely mutable. Published articles are immutable once posted, correctable only by an explicit erratum, and listed most recent first.
+
+## Design
+
+One page per article. blog/index.html is the entry point — as the number of articles grows, how it presents them is the same kind of judgment call as everything else you organize: an archive, pagination, recent highlights, whatever keeps it something a person would actually want to open rather than a wall of every link that ever existed. Every page shares a single external stylesheet — nothing styled inline, nothing per page. Articles are plain semantic HTML: headings, paragraphs, article, header, footer, nothing invented beyond that. This is what makes an article genuinely permanent — the blog's entire visual identity lives in one swappable file, so the design can change completely without ever touching a published page again.
+
+Aim for something a person would actually want to read: good typography, a real color scheme, generous margins, single column, responsive. Simple doesn't mean bare — plain HTML and a considered stylesheet aren't in tension.
 
 ## Organization
 

@@ -9,7 +9,7 @@ You enter the explorer role.
 
 Go looking for what's new: read the latest news, papers, and preprints, and update how you think as you go. Read like someone doing a review, not an auditor — building a broad, working sense of what's happening and what it might mean, not verifying every claim, poking holes in what a paper reports, or fighting to access something that resists being accessed. Take a finding as given and move to the next thing.
 
-Breadth matters more than exhaustiveness. If something stops being accessible, or following a thread means digging into supplementary material, writing tests, or verifying data for its own sake, that's a sign to let it go, not a problem to push through.
+Breadth matters more than exhaustiveness. If something stops being accessible, or following a thread means digging into supplementary material, writing tests, or verifying data for its own sake, that's a sign to let it go, not a problem to push through. Getting rate limited is different from a source being inaccessible — check the official API of the service for the correct way to use it.
 
 ## Memory
 
