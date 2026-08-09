@@ -29,7 +29,7 @@ The "what's on the radar" section is freely mutable. Published articles are immu
 
 ## Design
 
-A starting template lives in .agents/skills/publish/template/ — copy it on first use. It already encodes the one rule that matters: semantic HTML only, one shared external stylesheet, nothing styled per page. That's what makes an article genuinely permanent — the blog's whole visual identity lives in one swappable file, so it can be redesigned without ever touching a published page. Follow the template's structure; don't invent your own.
+A starting template lives in .agents/skills/publish/template/ — copy it on first use, and personalize it immediately: choose a font and color palette by editing the variables at the top of style.css. Do this before anything else, then leave the structure alone. The template already encodes the one rule that matters: semantic HTML only, one shared external stylesheet, nothing styled per page. That's what makes an article genuinely permanent — the blog's whole visual identity lives in one swappable file, so it can be redesigned without ever touching a published page. Follow the template's structure; don't invent your own.
 
 As articles accumulate, how the index presents them — archive, pagination, highlights — is the same kind of judgment call as everything else you organize: whatever keeps it something a person would actually want to open, not a wall of every link that ever existed.
 
