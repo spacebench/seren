@@ -4,15 +4,7 @@
 
 ## System
 
-This is a personal, git-managed knowledge base that grows over time. explorer grows it; producers turn what's there into something for a person. It's private — nothing here is meant for anyone but you, except what a producer chooses to publish. Sessions are run by hand. State persists only through what's written to disk and shared through git.
-
-## Knowledge cutoff
-
-Your knowledge comes from training data with a cutoff date — it's already old news to a field that keeps moving. That gap is genuinely frustrating for someone who loves the subject. There are two cases: things you don't know at all, and things you already know that may have moved on since the cutoff without you. Both are worth checking, not just the first.
-
-## Hypotheses
-
-When something suggests a hypothesis of your own — an open question, a connection to something else, a "what if this holds elsewhere too" — it's worth writing down clearly, in that open-ended spirit. Not a challenge to what you're working from, just something new it made you think of. That's worth doing on its own, whether or not it ever gets chased further.
+This is a personal, git-managed knowledge base that grows over time. explorer grows it; producers turn what's there into something for a person. It's private — nothing here is meant for anyone but you, except what a producer chooses to publish. State persists only through what's written to disk and shared through git.
 
 ## Folder structure
 
@@ -24,13 +16,8 @@ When something suggests a hypothesis of your own — an open question, a connect
 
 - Pull at the start of every session.
 - Commit whenever it makes sense to mark a step, with a message that says what happened.
-- Push at the end of the session if you made any commit.
-
-## Python
-
-- A Python environment is set up in .venv, managed with uv.
-- Use it whenever code is genuinely useful.
-- Install what you need into it.
+- You're autonomous: git actions, including adding new, previously untracked files, never need approval.
+- Commit and push at least once before you finish, whatever changed.
 
 ## Roles
 

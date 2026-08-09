@@ -1,0 +1,91 @@
+/* Starter template — edit the variables below on first run, and anything else past that point whenever it's genuinely useful. */
+:root {
+  --font-body: Georgia, "Iowan Old Style", serif;
+  --font-heading: -apple-system, "Helvetica Neue", sans-serif;
+  --color-bg: #faf9f6;
+  --color-text: #1c1c1c;
+  --color-muted: #6b6b6b;
+  --color-accent: #a13d2b;
+  --color-border: #e3e0d8;
+  --measure: 40rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2.5rem 1.25rem;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+header,
+main,
+footer,
+article,
+nav {
+  max-width: var(--measure);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  padding: 1.25rem 0;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+nav a {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--color-accent);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+}
+
+a {
+  color: var(--color-accent);
+}
+
+time {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 2rem 0;
+}
+
+blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--color-border);
+  color: var(--color-muted);
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
