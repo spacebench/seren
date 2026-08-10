@@ -1,0 +1,46 @@
+name: Explore
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '0 8 * * *'   # 08:00 UTC daily
+  #   - cron: '0 20 * * *'  # 20:00 UTC daily
+
+env:
+  OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
+  EXPLORE_MODEL: ${{ vars.EXPLORE_MODEL }}
+
+jobs:
+  explore:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+
+    steps:
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y curl poppler-utils
+
+      - name: Install opencode
+        run: curl -fsSL https://opencode.ai/install | bash && echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: Clone repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Create data folder
+        run: mkdir -p data
+
+      - name: Run explore
+        run: |
+          MODEL_FLAG=""
+          if [ -n "$EXPLORE_MODEL" ]; then
+            MODEL_FLAG="--model $EXPLORE_MODEL"
+          fi
+          opencode run "/explore then commit and push any change" $MODEL_FLAG

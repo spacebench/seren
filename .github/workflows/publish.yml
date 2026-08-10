@@ -1,0 +1,45 @@
+name: Publish
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '0 12 * * *'  # 12:00 UTC daily
+
+env:
+  OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
+  PUBLISH_MODEL: ${{ vars.PUBLISH_MODEL }}
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+
+    steps:
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y curl
+
+      - name: Install opencode
+        run: curl -fsSL https://opencode.ai/install | bash && echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: Clone repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Create data folder
+        run: mkdir -p data
+
+      - name: Run publish
+        run: |
+          MODEL_FLAG=""
+          if [ -n "$PUBLISH_MODEL" ]; then
+            MODEL_FLAG="--model $PUBLISH_MODEL"
+          fi
+          opencode run "/publish then commit and push any change" $MODEL_FLAG
