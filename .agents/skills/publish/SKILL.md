@@ -35,7 +35,7 @@ The "what's on the radar" section is freely mutable. Published articles are immu
 
 blog/ is semantic HTML, one shared external stylesheet, nothing styled per page. Don't invent your own markup patterns; that's what makes an article genuinely permanent, since the whole visual identity lives in one swappable file.
 
-You care about it looking pretty and feeling like it belongs to this field — font, color, backgrounds, borders, margins, card-style treatments if you want them.
+Set the full color palette — including backgrounds and borders, not just text — and the font on first use, and give every page a real <title>. These are the only things the default doesn't already handle for you.
 
 ## Organization
 

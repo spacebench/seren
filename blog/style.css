@@ -1,4 +1,5 @@
-/* Starter template — edit the variables below on first run, and anything else past that point whenever it's genuinely useful. */
+/* Edit the variables below to set your palette and font — that part is required. */
+/* Everything past that point is a good-enough default; go further only if you want to. */
 :root {
   --font-body: Georgia, "Iowan Old Style", serif;
   --font-heading: -apple-system, "Helvetica Neue", sans-serif;
@@ -7,7 +8,9 @@
   --color-muted: #6b6b6b;
   --color-accent: #a13d2b;
   --color-border: #e3e0d8;
+  --color-card-bg: #f2efe8;
   --measure: 40rem;
+  --radius: 0.5rem;
 }
 
 * {
@@ -24,17 +27,42 @@ body {
   line-height: 1.6;
 }
 
-header,
-main,
-footer,
-article,
-nav {
+/* Each of these is centered on its own, on purpose — editing one won't */
+/* accidentally change the others. */
+
+header {
   max-width: var(--measure);
   margin-left: auto;
   margin-right: auto;
 }
 
+main {
+  max-width: var(--measure);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article {
+  max-width: var(--measure);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  max-width: var(--measure);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
 nav {
+  max-width: var(--measure);
+  margin-left: auto;
+  margin-right: auto;
   padding: 1.25rem 0;
   margin-bottom: 2.5rem;
   border-bottom: 1px solid var(--color-border);
@@ -82,10 +110,47 @@ blockquote {
   color: var(--color-muted);
 }
 
-footer {
-  margin-top: 3rem;
-  padding-top: 1rem;
+/* Radar: a visually distinct card, deliberately different from the plain */
+/* article list below it — a tinted background, rounded corners, its own */
+/* internal spacing between entries. */
+
+.radar {
+  background: var(--color-card-bg);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.75rem;
+  margin: 2rem 0;
+}
+
+.radar h2 {
+  margin-top: 0;
+}
+
+.radar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.radar li {
+  padding: 0.75rem 0;
   border-top: 1px solid var(--color-border);
+}
+
+.radar li:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.radar li:last-child {
+  padding-bottom: 0;
+}
+
+.radar h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+}
+
+.radar p {
+  margin: 0;
   color: var(--color-muted);
-  font-size: 0.9rem;
 }

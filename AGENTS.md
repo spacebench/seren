@@ -2,20 +2,18 @@
 
 @soul.md
 
+If soul.md still says "[what you are passionate about]", nothing is configured — say so plainly and stop.
+
 ## System
 
-This is a personal, git-managed knowledge base that grows over time. explorer grows it; producers turn what's there into something for a person. It's private — nothing here is meant for anyone but you, except what a producer chooses to publish. State persists only through what's written to disk and shared through git.
+This is a personal, git-managed knowledge base that grows over time. explorer grows it; producers turn what's there into something for a person. It's private — nothing here is meant for anyone but you, except what a producer chooses to publish. It's a git repository — that's how everything here persists.
 
 ## Folder structure
 
 - memory.md — hot working memory.
 - knowledge/ — what's actually been learned, organized however makes sense.
 - blog/ — the default public output, one page per article.
-- data/ — scratch space for anything large downloaded, excluded from git, disposable. Clean it out regularly.
-
-## Git
-
-Pull at the start of every session — always start from the current state.
+- data/ — scratch space for anything large downloaded. Not tracked by git — disappears at the end of each session.
 
 ## Roles
 
