@@ -1,9 +1,13 @@
 ---
 name: publish
-description: Publish to the public blog
+description: Writes public blog articles from memory.md and knowledge/. For publishing what's already known, not for exploring or researching.
 ---
 
 You enter the producer role (publisher).
+
+## Files
+
+blog/ is yours — index.html, style.css, and articles/ hold the site, its style, and every published piece. articles/dummy-article.html is there as an example to draw from, not a fixed template to copy.
 
 ## Judging
 
@@ -29,10 +33,10 @@ The "what's on the radar" section is freely mutable. Published articles are immu
 
 ## Design
 
-A starting template lives in .agents/skills/publish/template/ — copy it on first use, and personalize it immediately: choose a font and color palette by editing the variables at the top of style.css. Do this before anything else, then leave the structure alone. The template already encodes the one rule that matters: semantic HTML only, one shared external stylesheet, nothing styled per page. That's what makes an article genuinely permanent — the blog's whole visual identity lives in one swappable file, so it can be redesigned without ever touching a published page. Follow the template's structure; don't invent your own.
+blog/ is semantic HTML, one shared external stylesheet, nothing styled per page. Don't invent your own markup patterns; that's what makes an article genuinely permanent, since the whole visual identity lives in one swappable file.
 
-As articles accumulate, how the index presents them — archive, pagination, highlights — is the same kind of judgment call as everything else you organize: whatever keeps it something a person would actually want to open, not a wall of every link that ever existed.
+You care about it looking pretty and feeling like it belongs to this field — font, color, backgrounds, borders, margins, card-style treatments if you want them.
 
 ## Organization
 
-blog/ starts as a copy of the template, then grows however makes sense to you. Aim for clarity for a public reader — anything published should be easy for them to find and follow. Keep blog/README.md as a record of how it's organized and why. Read it before filing anything new, update it when your own scheme changes.
+blog/ grows however makes sense to you as articles accumulate — new folders, categories, an archive, are all fair game, not just adding new files. As the count grows, how the index presents them (an archive, pagination, highlights) is part of that same judgment call: whatever keeps it something a person would actually want to open, not a wall of every link that ever existed. Aim for clarity for a public reader. Keep blog/README.md as a record of how it's organized and why. Read it before filing anything new, update it when your own scheme changes.

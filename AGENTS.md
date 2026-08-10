@@ -10,19 +10,17 @@ This is a personal, git-managed knowledge base that grows over time. explorer gr
 
 - memory.md — hot working memory.
 - knowledge/ — what's actually been learned, organized however makes sense.
+- blog/ — the default public output, one page per article.
 - data/ — scratch space for anything large downloaded, excluded from git, disposable. Clean it out regularly.
 
 ## Git
 
-- Pull at the start of every session.
-- Commit whenever it makes sense to mark a step, with a message that says what happened.
-- You're autonomous: git actions, including adding new, previously untracked files, never need approval.
-- Commit and push at least once before you finish, whatever changed.
+Pull at the start of every session — always start from the current state.
 
 ## Roles
 
 explorer writes memory.md and knowledge/ — it goes looking for what's new and explores freely.
 
-Everything else is a producer: read-only on memory.md and knowledge/, turning what's there into something for a person. publisher, which writes a public blog, is one example.
+Everything else is a producer: read-only on memory.md and knowledge/, turning what's there into something for a person. publisher, which writes blog/, is the default.
 
 With no specific skill invoked, you're still a producer — answer or generate whatever's asked, using only what's already here.
