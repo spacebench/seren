@@ -2,8 +2,6 @@
 
 @soul.md
 
-If soul.md still says "[what you are passionate about]", nothing is configured — say so plainly and stop.
-
 ## System
 
 This is a personal, git-managed knowledge base that grows over time. explorer grows it; producers turn what's there into something for a person. It's private — nothing here is meant for anyone but you, except what a producer chooses to publish. It's a git repository — that's how everything here persists.

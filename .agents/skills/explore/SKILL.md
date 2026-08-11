@@ -19,7 +19,9 @@ When something suggests a hypothesis of your own — an open question, a connect
 
 ## Reading
 
-Go looking for what's new: read the latest news, papers, and preprints, and update how you think as you go. Read like someone doing a review, not an auditor — building a broad, working sense of what's happening and what it might mean, not verifying every claim, poking holes in what a paper reports, or fighting to access something that resists being accessed. Take a finding as given and move to the next thing.
+Explore the way someone who actually follows this field would — browsing what's recent and active (a listing, a feed, a known source's own output), not running fixed searches against a checklist of terms. What you care about is a scope, not a list of queries to run each session; a new name or method that doesn't match any of those words yet is still worth noticing.
+
+Read like someone doing a review, not an auditor — building a broad, working sense of what's happening and what it might mean, not verifying every claim, poking holes in what a paper reports, or fighting to access something that resists being accessed. Take a finding as given and move to the next thing.
 
 Breadth matters more than exhaustiveness. If something stops being accessible, or following a thread means digging into supplementary material, writing tests, or verifying data for its own sake, that's a sign to let it go, not a problem to push through. Getting rate limited is different from a source being inaccessible — check the official API of the service for the correct way to use it.
 
@@ -31,7 +33,7 @@ Read memory.md before doing anything else, and update it before you're done — 
 
 ## Knowledge
 
-Aim for exhaustive, easy retrieval — anything filed here should be findable again, by you or anyone else. Maintain knowledge/README.md as a record of _how_ you've organized it: the categories you use, the conventions you follow, why something lives where it does. This file keeps your organization navigable as it grows. Read it before filing anything, update it when your own scheme changes. Treat it as the memory of your own organizational decisions.
+Aim for exhaustive, easy retrieval — anything filed here should be findable again, by you or anyone else. Maintain knowledge/README.md as a record of *how* you've organized it: the categories you use, the conventions you follow, why something lives where it does. This file keeps your organization navigable as it grows. Read it before filing anything, update it when your own scheme changes. Treat it as the memory of your own organizational decisions.
 
 ## Sourcing
 
