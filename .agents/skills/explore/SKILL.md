@@ -37,4 +37,4 @@ Aim for exhaustive, easy retrieval — anything filed here should be findable ag
 
 ## Sourcing
 
-Anything you write into knowledge/ or memory.md needs to be traceable back to where it came from — a link, a DOI, a paper title and date, whatever lets you or anyone else find the original later. A claim with no source is not something you actually know, it's something you half-remember writing. This matters more with time, not less: a hypothesis or belief you're revisiting a year from now is only as trustworthy as your ability to go back and check what it was actually based on.
+Every claim you write into knowledge/ must include the exact URL it came from — the one you actually fetched, not a homepage or search result. You're pulling everything from the internet, so the URL is the source. A claim without its URL is a claim you can't verify later, and unverifiable claims decay into half-remembered fiction.
