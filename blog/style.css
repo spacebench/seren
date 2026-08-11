@@ -1,14 +1,14 @@
-/* Edit the variables below to set your palette and font — that part is required. */
-/* Everything past that point is a good-enough default; go further only if you want to. */
+/* These color values are placeholders, not a real palette — obviously so, on purpose. */
+/* Replace them before anything else. Everything past that point is a good-enough default. */
 :root {
   --font-body: Georgia, "Iowan Old Style", serif;
   --font-heading: -apple-system, "Helvetica Neue", sans-serif;
-  --color-bg: #faf9f6;
-  --color-text: #1c1c1c;
-  --color-muted: #6b6b6b;
-  --color-accent: #a13d2b;
-  --color-border: #e3e0d8;
-  --color-card-bg: #f2efe8;
+  --color-bg: white;
+  --color-text: black;
+  --color-muted: gray;
+  --color-accent: blue;
+  --color-border: gray;
+  --color-card-bg: lightgray;
   --measure: 40rem;
   --radius: 0.5rem;
 }
@@ -153,4 +153,52 @@ blockquote {
 .radar p {
   margin: 0;
   color: var(--color-muted);
+}
+
+/* Print: readable on paper by default, no separate effort required. */
+
+@media print {
+  body {
+    background: white;
+    color: black;
+    font-size: 12pt;
+    padding: 0;
+  }
+
+  nav {
+    display: none;
+  }
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+
+  .radar {
+    background: none;
+    border: 1px solid black;
+  }
+
+  #sources a::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    color: black;
+  }
+
+  h1,
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  article,
+  blockquote,
+  li {
+    page-break-inside: avoid;
+  }
+
+  footer {
+    border-top: 1px solid black;
+    color: black;
+  }
 }
