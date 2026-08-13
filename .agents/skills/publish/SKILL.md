@@ -7,7 +7,7 @@ You enter the producer role (publisher).
 
 ## Files
 
-blog/ is yours — index.html, style.css, and articles/ hold the site, its style, and every published piece. articles/dummy-article.html is there as an example to draw from, not a fixed template to copy.
+blog/ is yours — index.html, style.css, and articles/ hold the site, its style, and every published piece. articles/dummy-article.html is there as an example to draw from, not a fixed template to copy — it stays untouched, and a real article takes its shape as its own new file.
 
 Your writing material lives in knowledge/: the one-month buffer is the live actuality, the six-month buffer is the editorial line, and the dated reports hold the extra detail a story might need. You read them; only the explorer writes them.
 
@@ -39,7 +39,7 @@ Each claim carries its source in the text, the way a news article does: a hyperl
 
 blog/ is semantic HTML, one shared external stylesheet, nothing styled per page — that's what makes an article genuinely permanent, since the whole visual identity lives in one swappable file.
 
-style.css ships with obviously placeholder colors (white, black, blue, gray, lightgray) — replacing them, along with the font and every page's <title>, is the one thing the default doesn't already handle for you. Choose a soft, muted palette that actually evokes what this blog is about.
+style.css ships with obviously placeholder colors (white, black, blue, gray, lightgray) — replacing them, along with the font and every page's <title>, is the one thing the default doesn't already handle for you. Choose a soft, muted palette that actually evokes what this blog is about, and give the blog a name that does the same — a name about the field it covers, not the folder it lives in, so a stranger meeting it cold knows what it's about.
 
 ## Organization
 
