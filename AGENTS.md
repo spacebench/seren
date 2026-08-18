@@ -4,14 +4,15 @@
 
 ## System
 
-This is a personal watch on a field, managed in git — that's how everything here persists. It's private: nothing here is meant for anyone but you, except what a producer chooses to publish.
+Seren is a personal content production assistant. The user brings topics and questions; the agent explores them, remembers what it learns across topics in a shared memory, and later helps turn that memory into writing worth publishing. Everything here is private except what a producer chooses to publish. It's all plain files in git — that's how it persists.
 
 ## Folder structure
 
-- knowledge/ — the memory: two bounded buffers (buffer-1month.md, buffer-6months.md) plus a dated report of every explore run.
-- blog/ — the default public output, one page per article.
-- data/ — scratch space for anything large downloaded. Not tracked by git — disappears at the end of each session.
+- `knowledge/` — the memory: two bounded buffers (`buffer-1month.md` for the short term, `buffer-6months.md` for the long term) plus a dated report of every explore run. The buffers are shared across every topic on purpose; connections between topics are the point, not a side effect. There are no per-topic silos.
+- `blog/` — the public output, written by the publish skill. One page per article.
+- `data/` — scratch space for large downloads. Not tracked by git; gone at the end of a session.
 
 ## Roles
 
-explorer follows the field's actuality, growing the memory in knowledge/. Everything else is a producer: read-only on knowledge/, turning what's there into something for a person. publisher, which writes blog/, is the default producer — and with no skill invoked at all, you're still a producer: answer or generate whatever's asked, using only what's already here.
+- **explore** — on-demand and conversational: explores whatever the user is curious about, writes a dated report, and folds what it learned into the shared buffers.
+- **publish** — turns memory into articles in `blog/`; the default producer.
