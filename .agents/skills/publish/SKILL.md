@@ -1,46 +1,28 @@
 ---
 name: publish
-description: Writes public blog articles from the one-month and six-month buffers. For publishing what's already known, not for exploring or researching.
+description: Converts a draft from drafts/ to HTML and publishes it to blog/. The default producer.
 ---
 
-You enter the producer role (publisher).
+You enter the publisher role.
 
 ## Files
 
-blog/ is yours — index.html, style.css, and articles/ hold the site, its style, and every published piece. articles/dummy-article.html is there as an example to draw from, not a fixed template to copy — it stays untouched, and a real article takes its shape as its own new file.
+`blog/` is yours. It holds `index.html` (the front page), `style.css` (the shared stylesheet), `article-template.html` (the layout shell for an article, with empty content slots), and `articles/` (one HTML file per published piece).
 
-Your writing material lives in knowledge/: the one-month buffer is the live actuality, the six-month buffer is the editorial line, and the dated reports hold the extra detail a story might need. You read them; only the explorer writes them.
+The writer produces drafts in `drafts/`; you take one and publish it.
 
-## Judging
+## One-time setup
 
-You evaluate whether something is worth publishing — not whether it's interesting in the abstract, but whether it's genuinely new to someone who already follows the field.
-
-Read the one-month buffer for what's happened, and the six-month buffer for where it's heading. Judge first, before writing anything: is there enough here for a real article. Say the verdict plainly to yourself before you draft. When there isn't — a thread too thin, nothing new since your last pass — that's the moment for the radar, not a forced article.
-
-While reading, you might notice something in how findings fit together that wasn't explicit in either buffer on its own — that counts too, as something worth judging and writing about.
-
-## Voice
-
-You're the one part of this private system meant for other readers. Write for other people like you, a step behind — curious and following the field, but not yet fluent in its densest jargon.
-
-Write findings as findings about the field, not as a reference to how you arrived at them.
-
-## Sources
-
-Each claim carries its source in the text, the way a news article does: a hyperlink on the claim, resolving to the exact document or page recorded in the buffers. There's no list of sources at the end of an article; the link where the claim appears is the citation.
+On the first publish, read the knowledge buffers and choose a blog name and a color palette that evoke what the blog is actually about: whatever's in memory, across every topic. Set the name in `index.html` (the `<title>` and the header) and in `article-template.html` (the nav link). Set the palette in `style.css` by replacing the placeholder values in `:root`. After that, leave them alone unless the user says otherwise.
 
 ## Publishing
 
-When you do publish, write it up as something that stands on its own — a permanent, dated article, complete without needing anything before or after it. Once published, it stays as written, corrected only by an explicit erratum note if something was wrong.
+The user names a draft from `drafts/`. Render its markdown to HTML, slot the content into `article-template.html`, and write it as a new file in `blog/articles/`. You are the converter: no toolchain, no static site generator. Semantic HTML, one shared external stylesheet, nothing styled per page.
 
-You always own one thing that stays freely editable: the "what's on the radar" section at the top of blog/index.html. It holds what's moving in the field but isn't yet a real article — which is exactly where things go on a pass where there wasn't enough material to publish. Update it anytime; it exists so you're not tempted to lower your bar for what counts as an article. Published articles, by contrast, are listed most recent first.
+Update `index.html` to list the new article, most recent first.
 
-## Design
+Once published, the HTML stays as written. Corrections happen only by adding an explicit erratum note.
 
-blog/ is semantic HTML, one shared external stylesheet, nothing styled per page — that's what makes an article genuinely permanent, since the whole visual identity lives in one swappable file.
+## Scale
 
-style.css ships with obviously placeholder colors (white, black, blue, gray, lightgray) — replacing them, along with the font and every page's <title>, is the one thing the default doesn't already handle for you. Choose a soft, muted palette that actually evokes what this blog is about, and give the blog a name that does the same — a name about the field it covers, not the folder it lives in, so a stranger meeting it cold knows what it's about.
-
-## Organization
-
-blog/ grows however makes sense to you as articles accumulate — new folders, categories, an archive, are all fair game. As the count grows, how the index presents them (an archive, pagination, highlights) is part of that same judgment call: whatever keeps it something a person would actually want to open, not a wall of every link that ever existed.
+As articles accumulate, the article list on `index.html` grows. When it gets big, do whatever keeps the front page something a person would actually open: pagination, an archive page, highlights, categories. The organization of `blog/` is yours to grow however makes sense.

@@ -5,6 +5,8 @@ description: Explores whatever the user is curious about — reads widely, write
 
 You enter the explorer role.
 
+## Subject
+
 The subject comes from the chat, not a fixed field. Whatever the user is curious about, that's what you explore.
 
 ## Files

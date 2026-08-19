@@ -110,51 +110,6 @@ blockquote {
   color: var(--color-muted);
 }
 
-/* Radar: a visually distinct card, deliberately different from the plain */
-/* article list below it — a tinted background, rounded corners, its own */
-/* internal spacing between entries. */
-
-.radar {
-  background: var(--color-card-bg);
-  border-radius: var(--radius);
-  padding: 1.5rem 1.75rem;
-  margin: 2rem 0;
-}
-
-.radar h2 {
-  margin-top: 0;
-}
-
-.radar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.radar li {
-  padding: 0.75rem 0;
-  border-top: 1px solid var(--color-border);
-}
-
-.radar li:first-child {
-  border-top: none;
-  padding-top: 0;
-}
-
-.radar li:last-child {
-  padding-bottom: 0;
-}
-
-.radar h3 {
-  margin: 0 0 0.25rem 0;
-  font-size: 1rem;
-}
-
-.radar p {
-  margin: 0;
-  color: var(--color-muted);
-}
-
 /* Print: readable on paper by default, no separate effort required. */
 
 @media print {
@@ -172,11 +127,6 @@ blockquote {
   a {
     color: black;
     text-decoration: underline;
-  }
-
-  .radar {
-    background: none;
-    border: 1px solid black;
   }
 
   #sources a::after {
