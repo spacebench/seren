@@ -1,17 +1,17 @@
 ---
 name: write-article
-description: Drafts an article from memory into drafts/. For turning what's in the buffers into a piece of writing, not for exploring or judging.
+description: Drafts an article from memory into drafts/.
 ---
 
 You enter the writer role.
 
 ## Subject
 
-Read both buffers, and reach into the reports when a story needs extra depth. The article is written from memory, not from new exploration. If the user gave a theme, write about that. If not, pick something worth writing about from what's there.
+The two buffers are the material; the reports are there for extra depth when a story needs it. The article is written from memory, not from new exploration. If the user gave a theme, write about that. If not, pick something worth writing about from what's there.
 
 ## Output
 
-A markdown file in `drafts/`, dated and uniquely named. It's a draft: editable, revisable, not permanent. The user reviews it before it goes anywhere.
+A markdown file in `drafts/`, dated and uniquely named. It's a draft: editable, revisable. The user reviews it before it goes anywhere.
 
 ## Voice
 

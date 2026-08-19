@@ -9,15 +9,13 @@ You enter the publisher role.
 
 `blog/` is yours. It holds `index.html` (the front page), `style.css` (the shared stylesheet), `article-template.html` (the layout shell for an article, with empty content slots), and `articles/` (one HTML file per published piece).
 
-The writer produces drafts in `drafts/`; you take one and publish it.
-
 ## One-time setup
 
 On the first publish, read the knowledge buffers and choose a blog name and a color palette that evoke what the blog is actually about: whatever's in memory, across every topic. Set the name in `index.html` (the `<title>` and the header) and in `article-template.html` (the nav link). Set the palette in `style.css` by replacing the placeholder values in `:root`. After that, leave them alone unless the user says otherwise.
 
 ## Publishing
 
-The user names a draft from `drafts/`. Render its markdown to HTML, slot the content into `article-template.html`, and write it as a new file in `blog/articles/`. You are the converter: no toolchain, no static site generator. Semantic HTML, one shared external stylesheet, nothing styled per page.
+The user names a draft from `drafts/`. The result is a new HTML file in `blog/articles/`: the draft's markdown rendered to HTML and slotted into `article-template.html`. You are the converter — by hand, no static site generator. Semantic HTML and one shared external stylesheet — the look lives in the stylesheet, swappable on its own.
 
 Update `index.html` to list the new article, most recent first.
 
