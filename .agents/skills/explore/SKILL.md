@@ -1,6 +1,6 @@
 ---
 name: explore
-description: Explores whatever the user is curious about — reads widely, writes a dated report, and folds it into the shared short- and long-term memory. For growing memory on demand, not answering from it.
+description: Explores a topic, reads widely, writes a dated report to knowledge/, and folds what it learned into the shared memory.
 ---
 
 ## Subject

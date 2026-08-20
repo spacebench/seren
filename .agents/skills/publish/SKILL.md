@@ -1,6 +1,6 @@
 ---
 name: publish
-description: Converts a draft from drafts/ to HTML and publishes it to blog/. The default producer.
+description: Converts a draft from drafts/ to HTML and publishes it to blog/.
 ---
 
 ## Files
