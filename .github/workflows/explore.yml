@@ -9,6 +9,7 @@ on:
 env:
   OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
   EXPLORE_MODEL: ${{ vars.EXPLORE_MODEL }}
+  COMMIT_SUFFIX: "\n\n---\n\nonce done then commit and push everything."
 
 jobs:
   explore:
@@ -43,4 +44,9 @@ jobs:
           if [ -n "$EXPLORE_MODEL" ]; then
             MODEL_FLAG="--model $EXPLORE_MODEL"
           fi
-          opencode run "/explore then commit and push any change" $MODEL_FLAG
+          PROMPT=$(cat prompts/explore.txt)
+          if [ -z "$PROMPT" ] || [ "$PROMPT" = "[topic to explore]" ]; then
+            echo "::error::Set the explore topic in prompts/explore.txt before running."
+            exit 1
+          fi
+          opencode run "/explore $PROMPT$COMMIT_SUFFIX" $MODEL_FLAG

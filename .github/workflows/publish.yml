@@ -8,6 +8,7 @@ on:
 env:
   OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
   PUBLISH_MODEL: ${{ vars.PUBLISH_MODEL }}
+  COMMIT_SUFFIX: "\n\n---\n\nonce done then commit and push everything."
 
 jobs:
   publish:
@@ -36,10 +37,22 @@ jobs:
       - name: Create data folder
         run: mkdir -p data
 
-      - name: Run publish
+      - name: Set model flag
         run: |
-          MODEL_FLAG=""
           if [ -n "$PUBLISH_MODEL" ]; then
-            MODEL_FLAG="--model $PUBLISH_MODEL"
+            echo "MODEL_FLAG=--model $PUBLISH_MODEL" >> $GITHUB_ENV
+          else
+            echo "MODEL_FLAG=" >> $GITHUB_ENV
           fi
-          opencode run "/publish then commit and push any change" $MODEL_FLAG
+
+      - name: Write article
+        run: opencode run "/write-article then do not commit." $MODEL_FLAG
+
+      - name: Publish new draft
+        run: |
+          DRAFT=$(git ls-files --others --exclude-standard drafts/)
+          if [ -z "$DRAFT" ]; then
+            echo "::error::write-article produced no new draft in drafts/."
+            exit 1
+          fi
+          opencode run "/publish $DRAFT$COMMIT_SUFFIX" $MODEL_FLAG
