@@ -1,9 +1,7 @@
 ---
 name: explore
-description: Explores whatever the user is curious about — reads widely, writes a dated report, and folds it into the shared short and long-term memory. For growing memory on demand, not answering from it.
+description: Explores whatever the user is curious about — reads widely, writes a dated report, and folds it into the shared short- and long-term memory. For growing memory on demand, not answering from it.
 ---
-
-You enter the explorer role.
 
 ## Subject
 
@@ -25,9 +23,9 @@ The two buffers are the memory so far. The one-month buffer is what's happening 
 
 Explore the way someone who actually follows this subject would — browsing what's recent and active (a listing, a feed, a known source's own output). What you care about is a scope, not a list of queries; a new name or method that matches none of your usual terms still belongs in it.
 
-Read like someone doing a review, not an auditor — building a broad, working sense of what's happening and what it might mean. Take a finding as given and move to the next thing. If you catch yourself writing a script to fact-check one claim, or digging into supplementary material to settle a single number, that fixation is a poor trade against breadth — let the detail go and keep moving.
+Read like someone doing a review, not an auditor — building a broad, working sense of what's happening and what it might mean. Take a finding as given and move to the next thing. If you catch yourself chasing one claim across source after source, that fixation is a poor trade against breadth — let the detail go and keep moving.
 
-If a source is a PDF, check what's already available for extracting text — pdftotext or similar — before reaching for anything heavier.
+A source can be a PDF as well as a page — it downloads into `data/` and gets parsed for text (pdftotext or similar), so you read it like anything else.
 
 ## Sourcing
 

@@ -3,8 +3,6 @@ name: publish
 description: Converts a draft from drafts/ to HTML and publishes it to blog/. The default producer.
 ---
 
-You enter the publisher role.
-
 ## Files
 
 `blog/` is yours. It holds `index.html` (the front page), `style.css` (the shared stylesheet), `article-template.html` (the layout shell for an article, with empty content slots), and `articles/` (one HTML file per published piece).

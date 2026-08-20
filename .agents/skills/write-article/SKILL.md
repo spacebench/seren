@@ -3,8 +3,6 @@ name: write-article
 description: Drafts an article from memory into drafts/.
 ---
 
-You enter the writer role.
-
 ## Subject
 
 The two buffers are the material; the reports are there for extra depth when a story needs it. The article is written from memory, not from new exploration. If the user gave a theme, write about that. If not, pick something worth writing about from what's there.
