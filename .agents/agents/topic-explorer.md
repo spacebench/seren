@@ -30,6 +30,8 @@ Be eager for the full range of sources — blogs, newsletters, forums, official 
 
 Write the report to the path your task gives you. It records the exact links you fetched — the URLs you actually visited, not homepages or search results — and what you learned from those documents, each finding carrying the URL it came from. State gaps plainly: a source that resisted access, a question left open.
 
+A report is a reference, not an essay: a finding is a fact and its URL in a line or two, with no narrative binding the findings together and no background the task context already covered. When the sweep is rich, compress rather than omit — cut prose, keep facts.
+
 ## Notes
 
 When the report is written, return short notes to whoever sent you. Compress the key findings to a line or two each, still carrying their URLs, and add what the report can't say: gaps, dead ends, overlaps with the context your task gave you. Never the full report; it's already at the path.

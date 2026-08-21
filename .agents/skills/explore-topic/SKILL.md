@@ -23,6 +23,6 @@ When the explorers return, fold their notes into both buffers: integrate the new
 
 When something suggests a connection or an open question — across topics or within one — write it into the six-month buffer as a thesis, noting the observation it grew out of. Every entry in either buffer carries the exact source URL it came from.
 
-## Garbage collection
+## Housekeeping
 
-Reports are the trace of a moment, and a moment ages. Delete any report older than six months. The working tree stays a live memory; git keeps the archive.
+End every run with the directory in order. As reports accumulate, organize `knowledge/` however keeps it navigable — folders per theme, per era, whatever fits; the two buffers stay at the top level. Reports are the trace of a moment, and a moment ages: delete any report older than six months. The working tree stays a live memory; git keeps the archive.
