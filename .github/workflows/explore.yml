@@ -9,7 +9,7 @@ on:
 env:
   OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
   EXPLORE_MODEL: ${{ vars.EXPLORE_MODEL }}
-  COMMIT_SUFFIX: "\n\n---\n\nonce done then commit and push everything."
+  COMMIT_SUFFIX: "\n\n---\n\nOnce done then commit and push everything."
 
 jobs:
   explore:

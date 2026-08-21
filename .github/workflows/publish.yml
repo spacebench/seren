@@ -8,7 +8,7 @@ on:
 env:
   OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
   PUBLISH_MODEL: ${{ vars.PUBLISH_MODEL }}
-  COMMIT_SUFFIX: "\n\n---\n\nonce done then commit and push everything."
+  COMMIT_SUFFIX: "\n\n---\n\nOnce done then commit and push everything."
 
 jobs:
   publish:
