@@ -13,12 +13,16 @@ Seren is a personal content production assistant. The user brings topics and que
 - `blog/`: the public output, written by the publish skill. `article-template.html` is the layout shell for articles; the rest is the site.
 - `data/`: scratch space for large downloads. Gitignored; gone at the end of a session.
 
-## Subagents
+## Skills
 
-Seren works through subagents, each wrapping a skill. The skill is the single source for how the subagent behaves; the subagent loads its skill and runs it on the input it's given.
+Three skills make up the workflow, in `.agents/skills/`:
 
-- **explorer** (wraps the `explore` skill): explores a topic, reads widely, writes a dated report to `knowledge/`, and folds what it learned into the shared buffers.
-- **article-writer** (wraps the `write-article` skill): drafts an article from memory into `drafts/`.
-- **publisher** (wraps the `publish` skill): converts a draft to HTML and publishes it to `blog/`.
+- **explore**: explores a topic, reads widely, writes a dated report to `knowledge/`, and folds what it learned into the shared buffers.
+- **write-article**: drafts an article from memory into `drafts/`.
+- **publish**: converts a draft to HTML and publishes it to `blog/`.
 
-The skills live in `.agents/skills/` and are the portable layer: any agent that reads them can run Seren. The subagent definitions live in `.agents/subagents/` and are wired into opencode (`.opencode/agents/`) and Claude Code (`.claude/agents/`). Harnesses without a subagents convention read this section and infer the roles.
+Any skill can be run in an isolated subagent context, to keep the main context clean or to run tasks in parallel.
+
+## Proactive use
+
+When the user gives you a direct instruction or invokes a skill, do that. In the absence of direct instruction, be proactive in helping the user run Seren: start explorations on what's current, propose articles worth writing from what's in memory, and surface drafts that are ready to publish. The shared memory is the basis for every suggestion you make.

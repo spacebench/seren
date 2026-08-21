@@ -1,1 +1,0 @@
-../../.agents/subagents/publisher.md
