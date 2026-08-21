@@ -1,5 +1,5 @@
 ---
-name: explorer
+name: topic-explorer
 description: Explores a topic in isolation: reads widely, fetches sources, and writes a sourced findings report to a given path.
 mode: subagent
 ---

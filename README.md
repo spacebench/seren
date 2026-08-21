@@ -29,9 +29,9 @@ And it isn't either/or. A natural way to use Seren is to keep exploring by hand 
 1. **Create your repository.** Click "Use this template" above and pick a name.
 2. **Clone it locally.**
 3. **Set the persona.** Open `soul.md` and shape the agent's persona (the default is fine to start).
-4. **Explore a topic.** With opencode: `opencode run "/explore <your topic>"`. The agent reads the skill, fetches sources, writes a dated report to `knowledge/`, and folds what it learned into the two buffers.
+4. **Explore a topic.** With opencode: `opencode run "/explore-topic <your topic>"`. The agent reads the skill, fetches sources, writes a dated report to `knowledge/`, and folds what it learned into the two buffers.
 5. **Write an article.** A good manual flow: ask the agent what articles it could propose from memory, pick one, then `opencode run "/write-article <subject>"`. It drafts into `drafts/`. Open it and read it.
-6. **Publish.** `opencode run "/publish <path-to-draft>"`. It renders the draft to `blog/` and lists it on the front page.
+6. **Publish.** `opencode run "/publish-local <path-to-draft>"`. It renders the draft to `blog/` and lists it on the front page.
 7. **Iterate.** Tweak `soul.md` and your prompts until the output matches what you want; commit and push when you're happy.
 
 Once it behaves the way you want, you can let part of it run on its own:
@@ -53,8 +53,8 @@ Once it behaves the way you want, you can let part of it run on its own:
 
 The shipped workflows run the same skills you'd run by hand:
 
-- **explore** reads the topic from `prompts/explore.txt`, runs `/explore`, and commits and pushes the result.
-- **publish** runs `/write-article`, detects the new draft in `drafts/`, then runs `/publish <draft>` and commits everything.
+- **explore** reads the topic from `prompts/explore.txt`, runs `/explore-topic`, and commits and pushes the result.
+- **publish** runs `/write-article`, detects the new draft in `drafts/`, then runs `/publish-local <draft>` and commits everything.
 - **deploy** publishes `blog/` to GitHub Pages.
 
 ## Repository structure
@@ -66,5 +66,5 @@ The shipped workflows run the same skills you'd run by hand:
 - `drafts/`: markdown drafts written by write-article. You review them before publishing.
 - `blog/`: the public output, written by publish. Ships with a working default design.
 - `data/`: scratch space for large downloads, gitignored and gone at the end of a session.
-- `.agents/skills/`: the three skills (`explore`, `write-article`, `publish`), mirrored into `.claude/skills/` for Claude Code.
+- `.agents/skills/`: the three skills (`explore-topic`, `write-article`, `publish-local`), mirrored into `.claude/skills/` for Claude Code.
 - `.github/workflows/`: the bundled GitHub Actions (`explore`, `publish`, `deploy`), one predefined setup you can replace.

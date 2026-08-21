@@ -49,4 +49,4 @@ jobs:
             echo "::error::Set the explore topic in prompts/explore.txt before running."
             exit 1
           fi
-          opencode run "/explore $PROMPT$COMMIT_SUFFIX" $MODEL_FLAG
+          opencode run "/explore-topic $PROMPT$COMMIT_SUFFIX" $MODEL_FLAG

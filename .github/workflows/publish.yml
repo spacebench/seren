@@ -55,4 +55,4 @@ jobs:
             echo "::error::write-article produced no new draft in drafts/."
             exit 1
           fi
-          opencode run "/publish $DRAFT$COMMIT_SUFFIX" $MODEL_FLAG
+          opencode run "/publish-local $DRAFT$COMMIT_SUFFIX" $MODEL_FLAG

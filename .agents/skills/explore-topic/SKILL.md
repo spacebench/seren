@@ -1,5 +1,5 @@
 ---
-name: explore
+name: explore-topic
 description: Explores a topic by spawning explorer subagents that write dated reports to knowledge/, then folds their findings into the shared memory.
 ---
 

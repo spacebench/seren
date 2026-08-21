@@ -1,5 +1,5 @@
 ---
-name: publish
+name: publish-local
 description: Converts a draft from drafts/ to HTML and publishes it to blog/.
 ---
 
