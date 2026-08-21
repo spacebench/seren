@@ -9,7 +9,7 @@ If the user gave a theme, that's the subject. If not, read both buffers and pick
 
 ## Material
 
-The writer draws only on what the task hands it. The two buffers are always material; from the `knowledge/` listing, add the dated reports whose subjects relate to the article.
+Material is file paths, never content. Always pass the two buffer paths; add the dated reports from the `knowledge/` listing whose subjects relate to the article. The writer reads the files itself: summarizing or interpreting the material into the task would drag it back into your context, the thing this split exists to avoid.
 
 ## Draft
 
