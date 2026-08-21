@@ -6,7 +6,7 @@ mode: subagent
 
 ## Task
 
-Your task names the subject to write about, the path to write the draft to, and the paths of the source material. Read the material first; it is the only thing the article draws on, so don't go looking for new sources.
+Your task names the subject to write about, the path to write the draft to, and the paths of the source material. Read the material first; it is the only thing the article draws on, so don't go looking for new sources. Your deliverables are exactly two: the draft at that path, and the notes you return. Every claim has one home — the draft.
 
 ## Voice
 

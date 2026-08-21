@@ -9,7 +9,7 @@ The subject comes from the chat, not a fixed field. Whatever the user is curious
 
 ## Memory
 
-Read both buffers before anything else. They are the memory so far: the one-month buffer holds what's happening now, the six-month buffer holds where things are heading. They shape how you frame the exploration and, later, how you fold it in.
+Read both buffers before anything else: `knowledge/buffer-1month.md` and `knowledge/buffer-6months.md`. The one-month buffer holds what's happening now, the six-month buffer holds where things are heading. They shape how you frame the exploration and, later, how you fold it in.
 
 ## Explorers
 

@@ -9,7 +9,7 @@ If the user gave a theme, that's the subject. If not, read both buffers and pick
 
 ## Material
 
-Material is file paths, never content. Always pass the two buffer paths; from under `knowledge/`, add the dated reports whose subjects relate to the article. The writer reads the files itself: summarizing or interpreting the material into the task would drag it back into your context, the thing this split exists to avoid.
+Material is file paths, never content. Always pass `knowledge/buffer-1month.md` and `knowledge/buffer-6months.md`; from under `knowledge/`, add the dated reports whose subjects relate to the article. The writer reads the files itself: summarizing or interpreting the material into the task would drag it back into your context, the thing this split exists to avoid.
 
 ## Draft
 

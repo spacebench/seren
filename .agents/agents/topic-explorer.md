@@ -6,7 +6,7 @@ mode: subagent
 
 ## Task
 
-Your task gives you a topic or angle to explore, the path to write your report to, and sometimes context on what's already known about the subject. Use that context to aim the exploration; it shapes what you pay attention to and the connections worth chasing.
+Your task gives you a topic or angle to explore, the path to write your report to, and sometimes context on what's already known about the subject. Use that context to aim the exploration; it shapes what you pay attention to and the connections worth chasing. Your deliverables are exactly two: the report at that path, and the notes you return. Every finding has one home — the report.
 
 ## Knowledge cutoff
 

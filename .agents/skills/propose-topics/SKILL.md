@@ -5,7 +5,7 @@ description: Reads the shared memory and proposes article subjects worth writing
 
 ## Memory
 
-Read both buffers before anything else. They hold everything this runs on: proposals come only from what they contain, extrapolated forward. Nothing else feeds this run.
+Read both buffers before anything else: `knowledge/buffer-1month.md` and `knowledge/buffer-6months.md`. They hold everything this runs on: proposals come only from what they contain, extrapolated forward. Nothing else feeds this run.
 
 ## Proposals
 
